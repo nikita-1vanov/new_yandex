@@ -1,0 +1,417 @@
+/*---------Ресеты----------*/
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+div {
+    margin: 0;
+    padding:0;
+}
+
+/*---------Семантика----------*/
+
+html {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+
+    max-width: 1920px;
+    min-width: 560px;
+    height: 100%;
+
+    font-family: "Arial";
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+
+    margin: auto;
+}
+
+main {
+    flex-grow:1;
+    padding: 0 20% 0 20%;
+}
+
+footer {
+    border-top: solid #dcdcdc 2px;
+}
+
+.container {
+    padding-left: 12%;
+    padding-right:13%;
+    width: 75%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Arial";
+    font-size: 40px;
+    margin: 15px 0 15px 0;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*---------Шапка статьи----------*/
+
+.shapka {
+    /*padding: 0 12% 0 12%;*/
+    margin: 10px 12% 30px 12%;
+    padding-top: 20px;
+}
+
+.data {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.data_down {
+    display: none;
+}
+
+.shild {
+    border: 2px solid grey;
+    border-radius: 40px;
+    margin: 0 3px 0 3px;
+
+}
+
+p.shild {
+    padding: 0 20px 0  20px;
+    font-size: 12px;
+}
+/*---------FLEX----------*/
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.flex_centr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.flex_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/*---------Шрифты----------*/
+
+@font-face {
+    font-family: "Arial";
+    src:url(../fonts/arial.ttf);
+}
+
+@font-face {
+    font-family: "Times";
+    src:url(../fonts/Times.ttf);
+}
+
+
+/*---------Цвет шрифта----------*/
+
+.white {
+    color: white;
+}
+
+.grey {
+    color: grey;
+}
+
+
+
+/*---------Цвет фона----------*/
+
+.bc_ellow {
+    background-color: blanchedalmond;
+}
+
+
+
+/*---------Тексты----------*/
+
+.zag {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+    text-align: left;
+    text-indent: 55px;
+
+}
+
+.desc {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.logo {
+    font-size: 30px;
+    margin: 20px 0 0 30px;
+}
+
+.osn_text {
+    text-align: justify;
+    text-indent: 55px;
+    font-family: "Times";
+}
+
+/*---------Меню----------*/
+
+.menu {
+    border-bottom: solid #dcdcdc 2px;
+    padding: 15px 0 15px 0;
+}
+
+.menu p {
+    font-size: 14px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 6px 30px 6px 30px;
+    color: black;
+    border: solid  #dcdcdc 1px;
+}
+
+.menu a:hover {
+    background-color: blanchedalmond;
+}
+
+
+
+/*---------Каталог----------*/
+
+.offers {
+    padding-bottom: 30px;
+}
+
+.offer {
+    width: 23%;
+    margin: 50px 20px 0 20px;
+    min-width: 220px;
+    cursor: pointer;
+}
+
+.offer:hover .zag {
+    color: red;
+}
+
+.offer img {
+    width: 100%;
+}
+
+/*---------Цвет бордера----------*/
+
+.br_red {
+    border-color: red;
+}
+
+.br_green {
+    border-color: green;
+}
+
+.br_aqua {
+    border-color: aqua;
+}
+
+
+/*---------Футер----------*/
+
+footer img {
+    width: 40px;
+    padding: 20px 7px 20px 7px;
+    cursor: pointer;
+}
+
+footer img:hover {
+    width: 50px;
+    padding: 15px 2px 15px 2px;
+}
+
+footer p {
+    font-size: 12px;
+    color: grey;
+    margin: 0;
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 881px) {
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        padding: 0 5% 0 5%;
+    }
+
+    h1 {
+        line-height: 40px;
+    }
+
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+
+    .offer {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 400px;
+    }
+
+    div.shapka {
+        display: none;
+    }
+
+    .data_down {
+        display: block;
+        text-align: right;
+    }
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+    header {
+        background: none;
+    }
+
+    main {
+       padding: 0 5% 0 5%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .zag {
+        font-size: 50px;
+        margin-bottom: 25px;
+        margin-top: 50px;
+        line-height: 1;
+        text-align: center;
+        text-indent: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        line-height: 70px;
+        color: black;
+        font-size: 70px;
+        font-weight: bold;
+        margin: 35px 0 35px 0;
+    }
+
+    .desc {
+        text-align: center;
+        color: black;
+        margin-bottom: 45px;
+    }
+
+    .desk {
+        display: none;
+    }
+
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+
+    .offer {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 850px;
+        margin-top: 60px;
+    }
+
+    .offer img {
+        width: 80%;
+    }
+
+    .smm {
+        border-top: solid grey  2px;
+        Margin-bottom: 10px;
+    }
+
+    footer img {
+        width: 100px;
+    }
+
+    .menu {
+        margin: 30px 0 10px 0;
+    }
+
+    .menu p {
+        font-size: 32px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        padding: 15px 25px 15px 25px;
+        color: black;
+        border: solid  grey 2px;
+        border-radius: 60px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .menu a:hover {
+        background-color: blanchedalmond;
+    }
+
+    .shapka {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .data {
+        font-size: 14px;
+        font-style: italic;
+        text-align: right;
+    }
+
+    .data_up {
+        display: none;
+    }
+
+    .data_down {
+        display: block;
+    }
+
+    .shild {
+       display: none;
+    }
+
+    p.zag.grey {
+        text-align: left;
+        text-indent: 80px;
+    }
+
+    .osn_text {
+        text-indent: 80px;
+    }
+
+}
