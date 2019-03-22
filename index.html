@@ -14,7 +14,7 @@
     <meta name="description" content="Интернет магазин Сима-ленд - купить сувениры и подарки оптом и в розницу.
     Огромный каталог - более 500 000 наименований для поставок в Москву, Екатеринбург, Санкт-Петербург, по России,
     странам СНГ и Европе">
-    <link href="https://www.sima-land.ru/" rel="canonical">
+    <link href="https://site.ru/" rel="canonical">
 </head>
 
 <body>
@@ -35,10 +35,10 @@
     <nav class="container">
 
             <div class="menu flex_centr">
-                <p><a href="#" id="box">Маркетинг</a></p>
-                <p><a href="#" id="box2">WEB</a></p>
-                <p><a href="/grapfik">Графика</a></p>
-                <p><a href="/web">Все разделы</a></p>
+                <p><a href="#" id="box" style="background-color: white">Маркетинг</a></p>
+                <p><a href="#" id="box2" style="background-color: white">WEB</a></p>
+                <p><a href="#" id="box3" style="background-color: white">Графика</a></p>
+                <p><a href="#" id="box4" style="background-color: white">Аналитика</a></p>
             </div>
 
             <div id="market_menu" style="display: none">
@@ -63,6 +63,28 @@
                 </div>
             </div>
 
+            <div id="grapfik_menu" style="display: none">
+                <div class="menu flex_centr">
+                    <p><a href="market">КАТЕГОРИЯ 3.1</a></p>
+                    <p><a href="web">КАТЕГОРИЯ 3.2</a></p>
+                    <p><a href="/grapfik">КАТЕГОРИЯ 3.3</a></p>
+                    <p><a href="/grapfik">КАТЕГОРИЯ 3.4</a></p>
+                    <p><a href="/grapfik">КАТЕГОРИЯ 3.5</a></p>
+                    <p><a href="/web">Все разделы</a></p>
+                </div>
+            </div>
+
+            <div id="analitics_menu" style="display: none">
+                <div class="menu flex_centr">
+                    <p><a href="market">КАТЕГОРИЯ 4.1</a></p>
+                    <p><a href="web">КАТЕГОРИЯ 4.2</a></p>
+                    <p><a href="/grapfik">КАТЕГОРИЯ 4.3</a></p>
+                    <p><a href="/grapfik">КАТЕГОРИЯ 4.4</a></p>
+                    <p><a href="/grapfik">КАТЕГОРИЯ 4.5</a></p>
+                    <p><a href="/web">Все разделы</a></p>
+                </div>
+            </div>
+
     </nav>
 
     <script type="text/javascript">
@@ -75,11 +97,13 @@
             if(display == "none") {
                 document.getElementById('market_menu').style.display="block";
                 document.getElementById('web_menu').style.display="none";
-                document.getElementById('box').style.backgroundColor="blanchedalmond";
+                document.getElementById('grapfik_menu').style.display="none";
+                document.getElementById('analitics_menu').style.display="none";
             } else {
                 document.getElementById('market_menu').style.display="none";
                 document.getElementById('web_menu').style.display="none";
-                document.getElementById('box').style.backgroundColor="white";
+                document.getElementById('grapfik_menu').style.display="none";
+                document.getElementById('analitics_menu').style.display="none";
             }
         })
 
@@ -87,36 +111,132 @@
 
             display = document.getElementById('web_menu').style.display;
             if(display == "none") {
+                document.getElementById('market_menu').style.display="none";
                 document.getElementById('web_menu').style.display="block";
-                document.getElementById('market_menu').style.display="none";
+                document.getElementById('grapfik_menu').style.display="none";
+                document.getElementById('analitics_menu').style.display="none";
             } else {
-                document.getElementById('web_menu').style.display="none";
                 document.getElementById('market_menu').style.display="none";
+                document.getElementById('web_menu').style.display="none";
+                document.getElementById('grapfik_menu').style.display="none";
+                document.getElementById('analitics_menu').style.display="none";
             }
         })
 
+        document.querySelector('#box3').addEventListener('click', function () {
 
-        document.querySelector('#box').addEventListener('click', function () {
+            display = document.getElementById('grapfik_menu').style.display;
+            if(display == "none") {
+                document.getElementById('market_menu').style.display="none";
+                document.getElementById('web_menu').style.display="none";
+                document.getElementById('grapfik_menu').style.display="block";
+                document.getElementById('analitics_menu').style.display="none";
+            } else {
+                document.getElementById('market_menu').style.display="none";
+                document.getElementById('web_menu').style.display="none";
+                document.getElementById('grapfik_menu').style.display="none";
+                document.getElementById('analitics_menu').style.display="none";
+            }
+        })
 
-            display = document.getElementById('box').style.display;
+        document.querySelector('#box4').addEventListener('click', function () {
+
+            display = document.getElementById('analitics_menu').style.display;
+            if(display == "none") {
+                document.getElementById('market_menu').style.display="none";
+                document.getElementById('web_menu').style.display="none";
+                document.getElementById('grapfik_menu').style.display="none";
+                document.getElementById('analitics_menu').style.display="block";
+            } else {
+                document.getElementById('market_menu').style.display="none";
+                document.getElementById('web_menu').style.display="none";
+                document.getElementById('grapfik_menu').style.display="none";
+                document.getElementById('analitics_menu').style.display="none";
+            }
+        })
+
+        <!--Цвет кнопки при нажатии-->
+
+            document.querySelector('#box').addEventListener('click', function () {
+
+                display = document.getElementById('box').style.display;
+                if(display == "none") {
+                    document.getElementById('box').style.backgroundColor="white";
+                    document.getElementById('box2').style.backgroundColor="white";
+                    document.getElementById('box3').style.backgroundColor="white";
+                    document.getElementById('box4').style.backgroundColor="white";
+                } else {
+                    document.getElementById('box').style.backgroundColor="blanchedalmond";
+                    document.getElementById('box2').style.backgroundColor="white";
+                    document.getElementById('box3').style.backgroundColor="white";
+                    document.getElementById('box4').style.backgroundColor="white";
+                }
+            })
+
+            document.querySelector('#box').addEventListener('click', function () {
+
+                display = document.getElementById('box').style.display;
+                if(display == "none") {
+                    document.getElementById('box').style.backgroundColor="white";
+                    document.getElementById('box2').style.backgroundColor="white";
+                    document.getElementById('box3').style.backgroundColor="white";
+                    document.getElementById('box4').style.backgroundColor="white";
+                } else {
+                    document.getElementById('box').style.backgroundColor="blanchedalmond";
+                    document.getElementById('box2').style.backgroundColor="white";
+                    document.getElementById('box3').style.backgroundColor="white";
+                    document.getElementById('box4').style.backgroundColor="white";
+                }
+            })
+
+                document.querySelector('#box2').addEventListener('click', function () {
+
+                    display = document.getElementById('box2').style.display;
+                    if(display == "none") {
+                        document.getElementById('box').style.backgroundColor="white";
+                        document.getElementById('box2').style.backgroundColor="white";
+                        document.getElementById('box3').style.backgroundColor="white";
+                        document.getElementById('box4').style.backgroundColor="white";
+                    } else {
+                        document.getElementById('box').style.backgroundColor="white";
+                        document.getElementById('box2').style.backgroundColor="blanchedalmond";
+                        document.getElementById('box3').style.backgroundColor="white";
+                        document.getElementById('box4').style.backgroundColor="white";
+                    }
+                })
+
+        document.querySelector('#box3').addEventListener('click', function () {
+
+            display = document.getElementById('box3').style.display;
             if(display == "none") {
                 document.getElementById('box').style.backgroundColor="white";
-            } else {
-                document.getElementById('box').style.backgroundColor="blanchedalmond";
                 document.getElementById('box2').style.backgroundColor="white";
+                document.getElementById('box3').style.backgroundColor="white";
+                document.getElementById('box4').style.backgroundColor="white";
+            } else {
+                document.getElementById('box').style.backgroundColor="white";
+                document.getElementById('box2').style.backgroundColor="white";
+                document.getElementById('box3').style.backgroundColor="blanchedalmond";
+                document.getElementById('box4').style.backgroundColor="white";
             }
         })
 
-            document.querySelector('#box2').addEventListener('click', function () {
+        document.querySelector('#box4').addEventListener('click', function () {
 
-                display = document.getElementById('box2').style.display;
-                if(display == "none") {
-                    document.getElementById('box2').style.backgroundColor="white";
-                } else {
-                    document.getElementById('box2').style.backgroundColor="blanchedalmond";
-                    document.getElementById('box').style.backgroundColor="white";
-                }
+            display = document.getElementById('box4').style.display;
+            if(display == "none") {
+                document.getElementById('box').style.backgroundColor="white";
+                document.getElementById('box2').style.backgroundColor="white";
+                document.getElementById('box3').style.backgroundColor="white";
+                document.getElementById('box4').style.backgroundColor="white";
+            } else {
+                document.getElementById('box').style.backgroundColor="white";
+                document.getElementById('box2').style.backgroundColor="white";
+                document.getElementById('box3').style.backgroundColor="white";
+                document.getElementById('box4').style.backgroundColor="blanchedalmond";
+            }
         })
+
 
 
     </script>
