@@ -19,11 +19,11 @@
 
 <body>
 
-    <header class="container white">
+    <header class="header container white">
         <div class="logo">
-            <p>Logotip</p>
+            <p>WEBano</p>
         </div>
-        <h1>Интернет магазин<br>Название магазина</h1>
+        <h1>Интернет магазин<br> с определенной нишей</h1>
         <div class="desk">
             <p>Магазин работает с 10:00 до 22:00, без выходных<br>
             Музей — с 10:00 до 19:00, понедельник выходной<br>
@@ -35,10 +35,10 @@
     <nav class="container">
 
             <div class="menu flex_centr">
-                <p><a href="#" id="box" style="background-color: white">Маркетинг</a></p>
-                <p><a href="#" id="box2" style="background-color: white">WEB</a></p>
-                <p><a href="#" id="box3" style="background-color: white">Графика</a></p>
-                <p><a href="#" id="box4" style="background-color: white">Аналитика</a></p>
+                <p><a href="#" id="box" style="background-color: white">Для маркетологов</a></p>
+                <p><a href="#" id="box2" style="background-color: white">Для программистов</a></p>
+                <p><a href="#" id="box3" style="background-color: white">Для дизайнеров</a></p>
+                <p><a href="#" id="box4" style="background-color: white">Для аналитиков</a></p>
             </div>
 
             <div id="market_menu" style="display: none">
@@ -76,9 +76,9 @@
 
             <div id="analitics_menu" style="display: none">
                 <div class="menu flex_centr">
-                    <p><a href="market">КАТЕГОРИЯ 4.1</a></p>
-                    <p><a href="web">КАТЕГОРИЯ 4.2</a></p>
-                    <p><a href="/grapfik">КАТЕГОРИЯ 4.3</a></p>
+                    <p><a href="market">Яндекс.Метрика</a></p>
+                    <p><a href="web">Google Аналитикс</a></p>
+                    <p><a href="/grapfik">Google Tag Manager</a></p>
                     <p><a href="/grapfik">КАТЕГОРИЯ 4.4</a></p>
                     <p><a href="/grapfik">КАТЕГОРИЯ 4.5</a></p>
                     <p><a href="/web">Все разделы</a></p>
@@ -159,53 +159,37 @@
 
             document.querySelector('#box').addEventListener('click', function () {
 
-                display = document.getElementById('box').style.display;
+             display = document.getElementById('box').style.display;
                 if(display == "none") {
-                    document.getElementById('box').style.backgroundColor="white";
-                    document.getElementById('box2').style.backgroundColor="white";
-                    document.getElementById('box3').style.backgroundColor="white";
-                    document.getElementById('box4').style.backgroundColor="white";
-                } else {
-                    document.getElementById('box').style.backgroundColor="blanchedalmond";
-                    document.getElementById('box2').style.backgroundColor="white";
-                    document.getElementById('box3').style.backgroundColor="white";
-                    document.getElementById('box4').style.backgroundColor="white";
+                 document.getElementById('box').style.backgroundColor="white";
+                 document.getElementById('box2').style.backgroundColor="white";
+                 document.getElementById('box3').style.backgroundColor="white";
+                 document.getElementById('box4').style.backgroundColor="white";
+             } else {
+                 document.getElementById('box').style.backgroundColor="blanchedalmond";
+                 document.getElementById('box2').style.backgroundColor="white";
+                 document.getElementById('box3').style.backgroundColor="white";
+                 document.getElementById('box4').style.backgroundColor="white";
                 }
             })
 
-            document.querySelector('#box').addEventListener('click', function () {
-
-                display = document.getElementById('box').style.display;
-                if(display == "none") {
-                    document.getElementById('box').style.backgroundColor="white";
-                    document.getElementById('box2').style.backgroundColor="white";
-                    document.getElementById('box3').style.backgroundColor="white";
-                    document.getElementById('box4').style.backgroundColor="white";
-                } else {
-                    document.getElementById('box').style.backgroundColor="blanchedalmond";
-                    document.getElementById('box2').style.backgroundColor="white";
-                    document.getElementById('box3').style.backgroundColor="white";
-                    document.getElementById('box4').style.backgroundColor="white";
-                }
-            })
-
-                document.querySelector('#box2').addEventListener('click', function () {
+             document.querySelector('#box2').addEventListener('click', function () {
 
                     display = document.getElementById('box2').style.display;
                     if(display == "none") {
-                        document.getElementById('box').style.backgroundColor="white";
-                        document.getElementById('box2').style.backgroundColor="white";
-                        document.getElementById('box3').style.backgroundColor="white";
-                        document.getElementById('box4').style.backgroundColor="white";
+                document.getElementById('box').style.backgroundColor="white";
+                document.getElementById('box2').style.backgroundColor="white";
+                document.getElementById('box3').style.backgroundColor="white";
+                document.getElementById('box4').style.backgroundColor="white";
                     } else {
-                        document.getElementById('box').style.backgroundColor="white";
-                        document.getElementById('box2').style.backgroundColor="blanchedalmond";
-                        document.getElementById('box3').style.backgroundColor="white";
-                        document.getElementById('box4').style.backgroundColor="white";
+                document.getElementById('box').style.backgroundColor="white";
+                document.getElementById('box2').style.backgroundColor="blanchedalmond";
+                document.getElementById('box3').style.backgroundColor="white";
+                document.getElementById('box4').style.backgroundColor="white";
                     }
                 })
 
-        document.querySelector('#box3').addEventListener('click', function () {
+            document.querySelector('#box3').addEventListener('click', function () {
 
             display = document.getElementById('box3').style.display;
             if(display == "none") {
@@ -219,9 +203,9 @@
                 document.getElementById('box3').style.backgroundColor="blanchedalmond";
                 document.getElementById('box4').style.backgroundColor="white";
             }
-        })
+            })
 
-        document.querySelector('#box4').addEventListener('click', function () {
+            document.querySelector('#box4').addEventListener('click', function () {
 
             display = document.getElementById('box4').style.display;
             if(display == "none") {
@@ -235,9 +219,7 @@
                 document.getElementById('box3').style.backgroundColor="white";
                 document.getElementById('box4').style.backgroundColor="blanchedalmond";
             }
-        })
-
-
+            })
 
     </script>
 
@@ -245,56 +227,56 @@
         <div class ="offers flex">
             <div class="offer">
                 <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+            </div>
+
+            <div class="offer">
+                <img src="image/off.jpeg" alt="Товар 1">
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+            </div>
+
+            <div class="offer">
+                <img src="image/off.jpeg" alt="Товар 1">
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+            </div>
+
+            <div class="offer">
+                <img src="image/off.jpeg" alt="Товар 1">
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+            </div>
+
+            <div class="offer">
+                <img src="image/off.jpeg" alt="Товар 1">
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+            </div>
+
+            <div class="offer">
+                <img src="image/off.jpeg" alt="Товар 1">
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
             </div>
 
             <div class="offer">
                 <img src="image/off.jpeg" alt="Товар 1">
                 <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
             </div>
 
             <div class="offer">
                 <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
             </div>
 
             <div class="offer">
                 <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
-            </div>
-
-            <div class="offer">
-                <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
-            </div>
-
-            <div class="offer">
-                <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
-            </div>
-
-            <div class="offer">
-                <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
-            </div>
-
-            <div class="offer">
-                <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
-            </div>
-
-            <div class="offer">
-                <img src="image/off.jpeg" alt="Товар 1">
-                <p class="zag">Красиврое название товара</p>
-                <p class="desc">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
+                <p class="zag b">Красиврое название товара</p>
+                <p class="desc i">Красивое описание товара с использованием красивых слов, словосочетании и афоризмов</p>
             </div>
         </div>
 
